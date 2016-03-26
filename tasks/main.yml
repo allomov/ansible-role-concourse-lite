@@ -1,0 +1,7 @@
+---
+- name: "run vagrant init"
+  shell: vagrant init concourse/lite
+
+- name: "run vagrant up"
+  shell: vagrant up --provider=virtualbox
+  # when: use_virtualbox is True

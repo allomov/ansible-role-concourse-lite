@@ -1,0 +1,23 @@
+---
+galaxy_info:
+  author: "Alexander Lomov"
+  description: "Install concourse-lite easily on your host"
+  company: "Altoros"
+  license: "license (GPLv2, CC-BY, etc)"
+  min_ansible_version: 2
+  platforms:
+    - name: "Ubuntu"
+      versions:
+       - all
+  categories:
+    - cloud
+    - testing
+    - ci
+
+dependencies:
+- role: azavea.virtualbox
+  tags: virtualbox
+  virtualbox_version: 5.0
+- role: azavea.vagrant
+  tags: vagrant
+  vagrant_version: 1.8.1
