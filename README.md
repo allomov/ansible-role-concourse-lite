@@ -32,7 +32,7 @@ cat <<EOF > playbook.yml
 ---
 - hosts: jumpbox
   roles: 
-  - role: allomov.bosh-jumpbox
+  - role: allomov.concourse-lite
 EOF
 
 cat <<EOF > hosts
