@@ -1,6 +1,8 @@
 ---
 - name: "run vagrant init"
   shell: vagrant init concourse/lite
+  args:
+    creates: Vagrantfile
 
 - name: "run vagrant up"
   shell: vagrant up --provider=virtualbox

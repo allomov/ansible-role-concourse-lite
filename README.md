@@ -43,4 +43,11 @@ EOF
 ansible-playbook -i hosts playbook.yml
 ```
 
-Enjoy!
+Enjoy! You can go for a cup a coffee now.
+
+### Note
+
+In case of error on `Install VirtualBox` step, you should run:
+```
+sudo apt-get -f install
+```
